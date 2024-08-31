@@ -13,21 +13,45 @@
         <a href="#" class="logo">Ana Clara</a>
 
         <nav>
-            <a href="/index.html" class="active"> Index</a>
-            <a href="/paginas/formacao.html" >Formação</a>
-            <a href="/paginas/projetos.html" >Projetos</a>          
-         <a href="/paginas/sobremim.html" >Sobre mim</a>
-            <a href="/paginas/contato.html" >Contato</a>
+            <a href="/index.html">Index</a>
+            <a href="/paginas/formacao.html">Formação</a>
+            <a href="/paginas/projetos.html">Projetos</a>          
+            <a href="/paginas/sobremim.html">Sobre mim</a>
+            <a href="/paginas/contato.html" class="active">Contato</a>
         </nav>
     </header>
+    
     <section class="home">
-        
         <div class="home-content">
-            <h1>Olá, me chamo <span>Ana Clara</span></h1>
-            <!-- <h3 class="typing-text">Sou <span></span></h3> -->
-            <p>Estudante de Análise e Desenvolvimento de Sistemas em formação.</p>
-           
+            <h1><span>Deseja entrar em contato?</span></h1>            
+            <p>Me mande uma mensagem no <a href="https://www.linkedin.com/in/anaclaracamorim/" target="_blank">LinkedIn</a> ou entre em contato:</p>
+        </div>        
+    </section>
+
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Formulário de Contato</h2>
+            <form action="/submit_form" method="POST">
+                <div class="input-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
         </div>
     </section>
+
+    
 </body>
 </html>
