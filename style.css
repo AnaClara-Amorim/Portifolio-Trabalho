@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/*Configurações principais*/
 *{
     margin: 0;
     padding: 0;
@@ -37,6 +38,7 @@ header{
     z-index: 100;
 }
 
+/*Configuração de logo + pequena animação*/
 .logo{
     font-size: 3rem;
     color: #dc2bad;
@@ -64,39 +66,7 @@ nav a.active{
     border-bottom: 3px solid #dc2bad;
 }
 
-@media(max-width:995px){
-    nav{
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #dc2bad;
-        border-bottom: 3px solid #dc2bad;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem solid;
-        background-color: #161616;
-        border-top: 0.1rem solid rgba(0,0,0,0.1);
-    }
-
-    nav.active{
-        display: block;
-    }
-
-    nav a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-
-    nav a:hover,
-    nav a.active{
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #dc2bad;
-    }
-}
-
+/*Configuração principal da section, utilizada para todas as páginas*/
 section{
     min-height: 100vh;
     padding: 1rem 9% 1rem;
@@ -180,11 +150,10 @@ span{
     box-shadow: 0  0 25px #dc2bad;
 }
 
-
-
+/*Animação da index*/
 .typing-text{
-    font-size: 34px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 00;
     min-width: 280px;
 }
 
@@ -195,16 +164,16 @@ span{
 .typing-text span::before{
     content: "software Developer";
     color: #dc2bad;
-    animation: words 20s infinite;
+    animation: words 15s infinite;
 }
 
 .typing-text span::after{
     content: "";
-    background-color: black;
+    background-color: d6adcb;
     position: absolute;
     width: calc(100% + 8px);
     height: 100%;
-    border-left: 3px solid black;
+    border-left: 3px solid d6adcb;
     right: -8;
     animation: cursor 0.6s infinite;
 }
@@ -217,19 +186,19 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Estudante de Web Desingner";
+        content: "Estudante de Análise e Desenvolvimento de Sistemas";
     }
     21%, 40%{
-        content: "2";
+        content: "Formada em biologia";
     }
     41%, 60%{
-        content: "3";
+        content: "Interdisciplinar";
     }
     61%, 80%{
-        content: "4";
+        content: "Mãe de pet";
     }
     81%, 100%{
-        content: "5";
+        content: "Concurseira";
     }
 }
 
@@ -324,3 +293,36 @@ span{
     background-color: #caa7c0;
 }
 
+/*Responsividade*/
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #dc2bad;
+        border-bottom: 3px solid #dc2bad;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.active{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #dc2bad;
+    }
+}
