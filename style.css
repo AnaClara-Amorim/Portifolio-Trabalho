@@ -123,11 +123,20 @@ span{
 .home-content h3{
     font-size: 4rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 700;    
 }
 
 .home-content p{
     font-size: 2.6rem;
+    
+}
+
+.textos{
+    background-color: #d6adcb;
+    padding: 10px;
+    border-radius: 10px;
+    color: #161616;
+    text-indent: 30px; 
 }
 
 .home-img{
@@ -248,4 +257,6 @@ span{
         margin-top: 4rem;
     }
 }
+
+
 
